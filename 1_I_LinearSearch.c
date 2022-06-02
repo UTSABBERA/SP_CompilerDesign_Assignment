@@ -14,7 +14,7 @@ int main() {
 
     int res = linearSearch(a, n, v); //result : index or -1
 
-    if (res != -1) printf("Index of the value in the array: %d", res);
+    if (res != -1) printf("The index of the value in the array is %d", res);
     else printf("The value is not present in the array");
 
     return 0;
