@@ -1,3 +1,4 @@
+//Linear Search implementation
 #include <stdio.h>
 
 int linearSearch(int arr[], int size, int val) {
