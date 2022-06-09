@@ -1,0 +1,9 @@
+1.	I.  Write a program to implement linear search.
+    II. Write a program to implement binary search.
+2.	Write a program to implement interchange sort.
+3.	Write a program to implement shell sort.
+4.	Write a program to implement bucket sort.
+5.	Write a program to implement radix sort.
+6.	Write a program to implement hashing.
+7.	Write a program to design lexical analyzer using C. 
+8.	Write a program to design YACC using C.
