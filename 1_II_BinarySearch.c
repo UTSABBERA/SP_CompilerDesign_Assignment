@@ -12,11 +12,15 @@ int binarySearch(int arr[], int start, int end, int val) {
 }
 
 int main() {
-    int a[] = {1, 2, 4, 6, 8}; //Example array
-    int v = 6; //value to be searched
-    int n = sizeof(a)/sizeof(a[0]); // size of the array
+    int a[30], v, n;
+    printf("Enter Array Size: ");
+    scanf("%d", &n);
+    printf("Enter Elements(sorted): ");
+    for (int i = 0; i < n; i++) scanf("%d", &a[i]);
+    printf("Enter The Value To Be Searched: ");
+    scanf("%d", &v);
 
-    int res = binarySearch(a, 0, n, v);
+    int res = binarySearch(a, 0, n-1, v);
 
     if (res != -1) printf("The index of the value in the array is %d", res);
     else printf("The value is not present in the array");

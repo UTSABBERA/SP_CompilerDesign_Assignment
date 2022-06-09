@@ -9,9 +9,13 @@ int linearSearch(int arr[], int size, int val) {
 }
 
 int main() {
-    int a[] = {1, 5, 3, 2, 6}; //example array
-    int v = 5; //value to be searched
-    int n = sizeof(a)/sizeof(a[0]); //size
+    int a[30], v, n;
+    printf("Enter Array Size: ");
+    scanf("%d", &n);
+    printf("Enter Elements: ");
+    for (int i = 0; i < n; i++) scanf("%d", &a[i]);
+    printf("Enter The Value To Be Searched: ");
+    scanf("%d", &v);
 
     int res = linearSearch(a, n, v); //result : index or -1
 

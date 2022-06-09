@@ -1,7 +1,7 @@
 //Interchange Sort Implementation
 #include <stdio.h>
 
-int interchangeSort(int arr[], int size) {
+void interchangeSort(int arr[], int size) {
     for (int i = 0; i < size; i++) 
         for (int j = i; j < size; j++) 
             if (arr[j] < arr[i]) {
@@ -13,8 +13,11 @@ int interchangeSort(int arr[], int size) {
 }
 
 int main() {
-    int a[] = {2, 5, 3, 1, 6, 4}; //example array
-    int n = sizeof(a)/sizeof(a[0]); //size
+    int a[30], v, n;
+    printf("Enter Array Size: ");
+    scanf("%d", &n);
+    printf("Enter Elements: ");
+    for (int i = 0; i < n; i++) scanf("%d", &a[i]);
     
     interchangeSort(a, n); //sorting
 
